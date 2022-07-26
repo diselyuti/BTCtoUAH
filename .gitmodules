@@ -1,4 +1,3 @@
-[submodule "https://github.com/diselyuti/BTCtoUAH-client.git"]
-	url = client
 [submodule "client"]
+    path = client
 	url = https://github.com/diselyuti/BTCtoUAH-client.git
