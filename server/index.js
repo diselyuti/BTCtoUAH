@@ -134,7 +134,7 @@ app.post('/sendEmails', async (req, res) => {
 app.post('/contact', async (req, res) => {
     try{
         let body = req.body;
-        let info = contact(body.email, body.text);
+        let info = await contact(body.email, body.text);
         console.log("Contact: ", info);
         res.status(200).send({message: 'Thank you for contact!'});
     }catch (err){
